@@ -1,0 +1,135 @@
+body{
+	background-color: #BDBDBD;
+}
+
+body.claro{
+	-webkit-animation: btn-claro 3s 1;
+	background-color: #8de1bd;
+
+}
+
+body.oscuro{
+	-webkit-animation: btn-oscuro 3s 1;
+	background-color: #577a76;
+}
+
+button{
+	background-color: #298A08;
+	color: #ffffff;
+	border: none;
+	width: 100%;
+	padding: 30px;
+	font-size: 1em;
+	margin-top: 10px;
+}
+
+#zona-gestos{
+	width: 100%;
+	background-color: #298A08;
+	margin-top: 10px;
+	min-height: 300px;
+	display: block;
+}
+
+#info{
+	color: #ffffff;
+	font-size: 2em;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+#zona-gestos.doubletap{
+	-webkit-animation: pulsacion 1.5s 1;
+}
+
+#zona-gestos.press{
+	-webkit-animation: presion 1.5s 1;
+}
+
+#zona-gestos.swipe-derecha{
+	-webkit-animation: swipe-derecha 1.5s 1;
+}
+
+#zona-gestos.swipe-izquierda{
+	-webkit-animation: swipe-izquierda 1.5s 1;
+}
+
+#zona-gestos.rotate{
+	-webkit-animation: rotate 1.5s 1;
+}
+
+#zona-gestos.tap{
+	-webkit-animation: tap 100ms 1;
+}
+
+
+
+@-webkit-keyframes pulsacion {
+	0%, 100%{
+		background-color: #298A08;
+	}
+	50% {
+		background-color: #8de1bd;
+	}
+}
+
+@-webkit-keyframes presion {
+	0%, 100%{
+		background-color: #298A08;
+	}
+	50% {
+		background-color: #577a76;
+	}
+}
+
+@-webkit-keyframes swipe-derecha {
+	0%, 100%{
+		margin-left: 0%;
+	}
+	50% {
+		margin-left: 100%;
+	}
+}
+
+@-webkit-keyframes swipe-izquierda {
+	0%, 100%{
+		width: 100%;
+	}
+	50% {
+		width: 0%;
+	}
+}
+
+@-webkit-keyframes rotate {
+	100%{
+		-webkit-transform: rotate(360deg);
+		}
+}
+
+@-webkit-keyframes btn-claro {
+	0%{
+		background-color: #577a76;
+	}
+	100% {
+		background-color: #8de1bd;
+	}
+}
+
+@-webkit-keyframes btn-oscuro {
+	0%{
+		background-color: #8de1bd;
+	}
+	100% {
+		background-color: #577a76;
+	}
+}
+
+@-webkit-keyframes tap {
+	100%{
+		background-color: yellow;
+	}
+}
+
+
+
+
